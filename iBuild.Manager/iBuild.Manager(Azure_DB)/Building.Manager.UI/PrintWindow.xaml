@@ -1,0 +1,13 @@
+﻿<Window x:Class="Building.Manager.PrintWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Building.Manager"
+        xmlns:my="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer"
+        Title="PrintWindow" Height="700" Width="800" >
+    <Grid>
+        <my:CrystalReportsViewer HorizontalAlignment="Left" Name="crystalReportsViewer"
+         VerticalAlignment="Top" Height="660" Width="774" Margin="10,10,0,0" />
+    </Grid>
+</Window>

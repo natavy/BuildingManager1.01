@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Building.Manager.Controls.OfferControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Building.Manager.Controls"
+             xmlns:my="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer"
+            Height="680" Width="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Building.Manager;component/Styles/Style.Building.Manager.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <StackPanel>
+        <Grid x:Name="Grid_Offer" Margin="5,5,35,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="294*"/>
+                <ColumnDefinition Width="86*"/>
+                <ColumnDefinition Width="224*"/>
+                <ColumnDefinition Width="14*"/>
+                <ColumnDefinition Width="33*"/>
+                <ColumnDefinition Width="87*"/>
+                <ColumnDefinition Width="22*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="selectionList" CanUserDeleteRows="True" CanUserAddRows="False" 
+                      AutoGenerateColumns="False" VerticalAlignment="Stretch" HorizontalAlignment="Center" 
+                      Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="6" Width="703" ItemsSource="{Binding OfferServices}" Height="Auto" Margin="34,10,1,1">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding ="{Binding ServiceId}"/>
+                    <DataGridTextColumn Header="Наименование" Width="295" Binding ="{Binding ServiceName}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="Мярка" Width="80" Binding ="{Binding ServiceMeasure}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Количество" Width="110" Binding ="{Binding Quantity,UpdateSourceTrigger=PropertyChanged}" />
+                    <DataGridTextColumn Header="Ед.цена" Width="88" Binding ="{Binding ServicePrice}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Стойност" Width="*" Binding ="{Binding Amount, Mode=OneWay}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label x:Name="lbl_SubTotal" Grid.Row="6" Grid.Column="2" Content="Междинна сума" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="11.2,10.6,44.8,10"  BorderThickness="0,0,0,1" BorderBrush="#FF688CAF" Width="Auto" Height="Auto" />
+            <TextBlock x:Name="block_SubTotal" Text="{Binding SubTotal}"  Grid.Row="6" Grid.Column="4"  Margin="0.8,13.6,3.2,10" Grid.ColumnSpan="2" TextAlignment="Center" FontSize="18" />
+            <Label x:Name="lbl_VAT" Grid.Row="7" Grid.Column="2"  Content="ДДС" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch"  Margin="11.2,10,44.8,10.4"  BorderThickness="0,0,0,1" BorderBrush="#FF688CAF" Width="Auto" />
+            <TextBlock x:Name="block_VAT" Text="{Binding Vat}"  Grid.Row="7" Grid.Column="4"  Margin="0.8,14,3.2,9.4" Grid.ColumnSpan="2" TextAlignment="Center" FontSize="18"/>
+            <Label x:Name="lbl_Total" Grid.Row="8" Grid.Column="2" Content="Общо"  HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Margin="11.2,9.8,44.8,10"  BorderThickness="0,0,0,1" BorderBrush="#FF688CAF" Width="Auto" />
+            <TextBlock x:Name="block_Total" Text="{Binding Total}" Grid.Row="8" Grid.Column="4"  FontSize="20" Margin="0.8,14.6,3.2,9" Grid.ColumnSpan="2" TextAlignment="Center"/>
+            <Button x:Name="btn_DeleteRow" Command="{Binding DeleteRowCommand}" Content="Изтрий ред" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="1" Margin="77,21,107.4,30" Height="Auto" Width="Auto" Style="{StaticResource ButtonStyle}"  />
+            <Button x:Name="btn_Print" Command="{Binding PrintCommand}" Grid.Row="9" HorizontalAlignment="Right" Content="Принтирай" Margin="0,21,29.8,30" Height="Auto" Width="111" Style="{StaticResource ButtonStyle}" Grid.ColumnSpan="2" />
+            <Button x:Name="btn_Calculate" Command="{Binding CalculateOfferCommand}" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="4" HorizontalAlignment="Right"  Content="Изчисли" Margin="0,21,57.2,30" Height="Auto" Width="111" Style="{StaticResource ButtonStyle}" />
+            <Button x:Name="btn_SaveData" Command="{Binding SaveOfferCommand}" Content="Запамети" Grid.Row="9" Grid.Column="2" Margin="24.2,21,88.8,30" Height="Auto" Width="Auto" Style="{StaticResource ButtonStyle}" />
+        </Grid>
+    </StackPanel>
+</UserControl>

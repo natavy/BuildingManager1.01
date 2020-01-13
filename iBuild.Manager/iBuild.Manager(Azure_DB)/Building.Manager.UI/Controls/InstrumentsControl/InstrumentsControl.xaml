@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Building.Manager.Controls.InstrumentsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Building.Manager.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="680" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Building.Manager;component/Styles/Style.Building.Manager.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <StackPanel>
+        <Grid Name="Grid_Instrumenti" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Source="/Images/calculation1.jpg" Grid.RowSpan="4" Margin="0,42,0,142.267"/>
+            <Button Content="Изчисли" Height="33" Width="150" Grid.Row="3" Click="Button_Click_Instruments" VerticalAlignment="Top" Margin="319,63.067,291,0" Style="{StaticResource ButtonStyle}" ></Button>
+        </Grid>
+    </StackPanel>
+</UserControl>

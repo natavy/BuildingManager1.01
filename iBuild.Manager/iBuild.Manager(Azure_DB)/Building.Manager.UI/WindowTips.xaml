@@ -1,0 +1,120 @@
+﻿<Window x:Class="Building.Manager.WindowTips"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Building.Manager"
+        mc:Ignorable="d"
+        Height="800" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph></Paragraph>
+                <Paragraph Foreground="#FF10257F" TextAlignment="Center">
+                    <Run FontSize="30">Съвети към бъдещи възложители</Run>
+                </Paragraph>
+                <Paragraph></Paragraph>
+                <Paragraph FontSize="20" Foreground="#454647" TextAlignment="Center">
+                    <Bold>1. Предварителна подготовка</Bold> 
+                </Paragraph>
+                <Paragraph BorderBrush="#FF688CAF" Foreground="#FF10257F" BorderThickness="2" Background="#FFE3F1FE" FontSize="20" TextAlignment="Center" Margin="20,0,0,0">
+                    Подробното описание на идеята в последствие служи за съставянето на задание за проектиране.
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Препоръчително е идеята за бъдещата сграда да бъде подробно описана. В текста да са изброени функциите и броя на помещенията, техни приблизителни размери и площи, вижданията на възложителя за използваните материали и конструкции. Също могат да бъдат събрани помощни материали, статии, снимки и др. като примери близки до идеята на възложителя.
+Подробното описание на идеята може да помогне при избора на архитект, като се предложат на различни проектантски екипи - еднакви(и пълноценни) данни за изготвянето на оферта.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Препоръчително е преди да се пристъпи към проектирането, бъдещият възложител да изясни за себе си икономическата целесъобразност на идеята за новата сграда. Ако бъдещата сграда е с комерсиална функция( търговски обект, промишлена или сграда за продаване/ отдаване на площи), то възложителя би трябвало да притежава бизнесплан, в който да са решени всички икономически въпроси. В противен случай, изготвянето на бизнесплана паралелно с проекта на сградата, възможно би променило заданието към архитекта в етап от работата когато вече са налични проектни разработки.
+-набавяне на основните документи - документи за собственост/учредено право на строеж,скици, извадка от действащ подробен устройствен план(виза за проектиране)и др.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph></Paragraph>
+                <Paragraph FontSize="20" Foreground="#454647" TextAlignment="Center">
+                    <Bold>2.Проектиране</Bold>
+                </Paragraph>
+                <Paragraph BorderBrush="#FF688CAF" Foreground="#FF10257F" BorderThickness="2" Background="#FFE3F1FE" FontSize="20" TextAlignment="Center" Margin="20,0,0,0">
+                    В повечето случаи готовият типов проект, струва колкото изработването на индивидуален проект.
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Някои предпочитат да си закупят готов типов проект за да си спестят по-високите разходи при проектирането на индивидуален проект. В повечето случаи обаче, типовият проект се корегира по желание на възложителя или заради нуждите от адаптирането на проекта към наличния терен, а това води до изравняването на цените на двата варианта. В случай, че все пак сте решили да си закупите готов проект, предварително проучете какви допълнителни разходи ще имате по адаптирането.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Ако сте избрали да се сдобиете с индивидуален проект, отделете достатъчно време за изготвянето му . Разгледайте различни оферти и изберете архитекта, с който ще работите.  Ако е възможно договорете срокове, които са достатъчни за нормалното изготвяне на проекта. Колкото по сложна е една сграда толкова повече време е нужно за проектирането и. Проектирането на големите сгради изисква повече време отколкото построяването им. Предполагам, че сте виждали видеото в интернет, за 10-етажнния хотел който се строи само за една седмица. Подобно нещо е немислимо без подробен проект...
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Участвайте активно в процеса на проектирането, това не само че не ви коства допълнителни разходи, а напротив - спестява ви нерви и средства по време на строителството. В договора за проектиране обикновенно са указани правата на възложителя : да се запознава с работата на архитекта, да изисква промени или допълнения на проектните разработки. Ако подобни клаузи отсъстват - изискайте ги. Запознавайте се детайлно с решенията взети от архитекта, предлагайте на обсъждане вашите идеи и съображения.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Заложете на енергийно ефективни и екологични решения.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph></Paragraph>
+                <Paragraph FontSize="20" Foreground="#454647" TextAlignment="Center">
+                    <Bold>3.Строителство</Bold>
+                </Paragraph>
+                <Paragraph BorderBrush="#FF688CAF" Foreground="#FF10257F" BorderThickness="2" Background="#FFE3F1FE" FontSize="20" TextAlignment="Center" Margin="20,0,0,0">
+                    Променяйте сградата на хартия, а не когато вече е от бетон...
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Препоръчително е по време на строителството, възложителя да бъде съветван или да наеме доверен компетентен специалист(консултант или инвеститорски контрол). Той може да участва и в срещите с архитекта, строителя, надзорната фирма и да консултира възложителя по всички технически въпроси.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph></Paragraph>
+                <Paragraph FontSize="20" Foreground="#454647" TextAlignment="Center">
+                    <Bold>4.Някои популярни факти</Bold>
+                </Paragraph >
+                <List>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Разходите за проектиране, разрешнителни и такси обикновенно не надвишават 5% от цялата инвестиция за строителството.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Стойността на материалите съставлява около 55-65% от цената на строежа.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Довършителните работи струват поне колкото грубият строеж на сградата.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Покрива на сградата струва колкото един етаж.(при скатни покриви).
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            Банята струва колкото дневната (при апартаменти и къщи - среден клас).
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Foreground="#6a6b6d">
+                            <Bold>Пасивните къщи</Bold> са 10% по-скъпи от конвенционалното строителство, но са 10 пъти по-енергоефективни
+                        </Paragraph>
+                    </ListItem>
+                    </List>
+                <Paragraph FontStyle="Italic" TextAlignment="Right" FontSize="14" Foreground="Gray" Padding="10">Източник:Victor Petrov</Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
