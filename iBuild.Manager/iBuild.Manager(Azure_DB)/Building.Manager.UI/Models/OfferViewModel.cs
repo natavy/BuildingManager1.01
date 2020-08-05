@@ -22,7 +22,7 @@ namespace Building.Manager.Models
         
         public ObservableCollection<OfferServiceViewModel> OfferServices { get; set; }
 
-        //Tezi poleta triabva da se napravia s NotifyPropertyChange za da move kato gi setnesh da se refreshne ekrana
+        
         private decimal _subtotal;
         public decimal SubTotal
         {
